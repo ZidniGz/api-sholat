@@ -87,9 +87,8 @@ def hitung_sholat(lat, lon, elevation=20):
 # Endpoint API
 @app.route('/api/jadwal', methods=['GET'])
 def get_jadwal():
-    # Ambil parameter dari URL, jika kosong gunakan default (Kebumen)
-    lat = request.args.get('lat', '-7.667808')
-    lon = request.args.get('lon', '109.656167')
+    lat = request.args.get('lat', '-7.670829')
+    lon = request.args.get('lon', '109.660677')
     elev = request.args.get('elev', 20)
     
     try:
